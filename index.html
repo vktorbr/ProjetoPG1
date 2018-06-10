@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto PG</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <table>
+        <tr>
+          <td><input type="checkbox" onchange="bPontos(this)" checked>Pontos de controle<br></td>
+          <td><input type="checkbox" id="verPoligonais" onchange="bPoligonais(this)" checked>Poligonal de controle<br></td>
+          <td><input type="checkbox" id="verCurva" onchange="bCurva(this)" checked>Pontos da curva<br></td>
+          <td>
+            <input type="range" id="barra">Barra de Derivadas
+          </td>
+        </tr>
+      </table>
+    </nav>
+    <div id="container">
+      <canvas id="canvas" width="1200px" height="600px" style="border: 1px solid green"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="event.js" charset="UTF-8"></script>
+  </body>
+</html>
